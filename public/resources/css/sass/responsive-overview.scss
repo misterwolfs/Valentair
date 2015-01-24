@@ -1,0 +1,202 @@
+@media only screen and (min-width : 22em) {
+
+.outer-wrapper {
+	.inner-wrapper {
+		width: 92%;
+	
+	}
+}
+
+.buble {
+	.heading, .footer {
+		p {
+			font-size: 2em;
+			line-height: 1.3em;
+		}
+		p.left {
+		}	
+		p.right {
+			font-size: 1.2em;
+		}
+	}
+	p {
+		padding: 0 1em;
+		min-height: 90px;
+		margin-top:0.5em;
+	}
+	.footer {
+		padding:0 1em;
+		p {
+			font-size:1.1em;
+			padding: 0.5em 0;
+		}
+		p.left {
+		}	
+		p.right {
+			font-size: 1.1em;
+		}
+	}
+}
+
+}
+
+@media only screen and (min-width : 34em) {
+
+.outer-wrapper {
+	.inner-wrapper {
+		width: 90%;
+	}
+
+}
+}
+
+
+@media only screen and (min-width: 51em) {
+
+body, html {
+	height: 100%;
+}
+
+#overview {
+	margin-top:0;
+}
+
+#header {
+	#logo-wrapper {
+		height: 734px;
+		max-width: 100%;
+		margin-top: 3em;
+		img{
+			padding-left: 8px;
+		} 
+	}
+}
+
+.outer-wrapper {
+	.inner-wrapper {
+	width: 98%;
+		h1 {
+			display: block;
+			font-size: 3em;
+		}
+	}
+}
+
+#overview {
+	.inner-wrapper {
+		position: relative;
+		.happy-couple-messages {
+			float:left;
+			width: 50%;
+			&:nth-child(2) {
+				padding-top: 150px;
+			}
+		}	
+		.love-hunter-messages {
+			float:right;
+			width: 50%;
+		}
+		.circle {
+			display:block;
+		}
+	}
+	.message-wrapper {
+		height:180px;
+		margin-bottom:150px;
+		overflow: visible !important;
+	}
+}
+
+.buble {
+	max-width:475px;
+	width: 95%;
+	// max-height: 180px;
+	height: 180px;
+	&.right {
+		float:right;
+	}
+	&.left {
+		float:left;
+	}
+	.heading, .footer {	
+		p {
+			font-size: 1.5em;
+			width: auto;
+			padding: 0
+		}
+		p.left {
+			float:left;
+		}	
+		p.right {
+			float:right;
+			color: $red;
+			font-size: 1.5em;
+		}
+	}
+	p {
+		margin-bottom: 0.1em;
+	}
+	.footer {
+		padding:0 1em;
+		p {
+			font-size:1em;
+		}
+		p.left {
+			float:left;
+		}	
+		p.right {
+			color: $green;
+			font-size: 1em;
+		}
+	}
+}
+	
+}
+
+@media only screen and (min-width : 61em) {
+
+}
+
+/* ===== == = === 68.75em (1200) === = == ===== */
+
+@media only screen and (min-width : 75em) {
+
+.outer-wrapper {
+	.inner-wrapper {
+		width: 1100px;
+		h1 {
+			font-size: 3.5em;
+		}
+	}
+
+}
+
+.buble {
+	&.right {
+		float:right;
+		&:after{
+			display:block;
+		}
+	}
+	&.left {
+		float:left;
+		&:after{
+			display:block;
+		}
+	}
+}
+
+}
+
+@media only screen and (min-width : 119em) {
+
+.outer-wrapper {
+	.inner-wrapper {
+	h1 {
+
+	}
+
+	}
+}
+
+}

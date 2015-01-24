@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'sofiaregular';
+    src: url('../fonts/sofia/sofia-regular-webfont.eot');
+    src: url('../fonts/sofia/sofia-regular-webfont.svg#sofiaregular') format('svg'),
+    	 url('../fonts/sofia/sofia-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sofia/sofia-regular-webfont.woff') format('woff'),
+         url('../fonts/sofia/sofia-regular-webfont.ttf') format('truetype');      
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ostrich_sans_roundedmedium';
+    src: url('../fonts/ostrich/ostrich-rounded-webfont.eot');
+    src: url('../fonts/ostrich/ostrich-rounded-webfont.svg#ostrich_sans_roundedmedium') format('svg'),
+     	 url('../fonts/ostrich/ostrich-rounded-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ostrich/ostrich-rounded-webfont.woff') format('woff'),
+         url('../fonts/ostrich/ostrich-rounded-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('../fonts/proxima/proximanova-regular-webfont-webfont.eot');
+    src: url('../fonts/proxima/proximanova-regular-webfont-webfont.svg#proxima_novaregular') format('svg'),
+    	 url('../fonts/proxima/proximanova-regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proxima/proximanova-regular-webfont-webfont.woff') format('woff'),
+         url('../fonts/proxima/proximanova-regular-webfont-webfont.ttf') format('truetype');  
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PNBold';
+    src: url('../fonts/proxima/proximanova-bold-webfont.eot');
+    src: url('../fonts/proxima/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg'),
+         url('../fonts/proxima/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proxima/proximanova-bold-webfont.woff') format('woff'),
+         url('../fonts/proxima/proximanova-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

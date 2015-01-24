@@ -1,0 +1,31 @@
+#detail-wrapper {
+	.buble {
+		height: auto;
+		&.center {
+			height:auto;
+		}
+		p {
+			min-height: 0;
+		}
+		.footer {
+			margin-top: 1em;
+		}
+		.heading p {
+			line-height: 1.6em;
+		} 
+	}
+	.input-form {
+		margin: 2em 1em 0 1em;
+		text-align: center;
+		label {
+			color: $red;
+			text-align: center;
+			font-size: 1.5em;
+		}
+		input {
+			margin: 0 auto;
+			margin-bottom: 1.2em;
+			width: 90%;
+		}
+	}
+}

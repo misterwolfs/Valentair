@@ -1,0 +1,333 @@
+/** SASS vars **/
+$skycolor: #b3e0f3;
+$green: #77cac8;
+$dark_grey: #333333;
+$white: #f8f8f8;
+$red: #ee2f47;
+
+$sofia: "sofiaregular";
+$ostrich: "ostrich_sans_roundedmedium";
+$proxima: "proxima_novaregular";
+$bold: "PNBold";
+
+body {
+	font-family: $proxima;
+	font-weight: normal !important;
+	font-size: 1em;
+	color: $white;
+	line-height: 1.8em;
+	background-color: $red;
+	-webkit-font-smoothing: antialiased;
+}
+
+* { 
+    outline: none;
+}
+::selection {
+	background: $green; /* Safari */
+	}
+::-moz-selection {
+	background: $green; /* Firefox */
+}
+
+a {
+	font-family: $bold;
+	font-weight: normal !important;
+	color: $white;
+	text-decoration: none;
+	&:hover {
+		color: $red;
+	}
+}
+
+/** Re-usable classes **/
+
+input:focus{
+	outline:none;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.clear {
+	clear:both;
+}
+
+.shadow {
+	-webkit-box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:    0px 6px 9px rgba(0, 0, 0, 0.1);
+	box-shadow:         0px 6px 9px rgba(0, 0, 0, 0.1);
+}
+
+.outer-wrapper {
+	min-height:100%;
+	&.no-height {
+		min-height: 0;
+	}
+	.inner-wrapper {
+
+		width: 95%;
+		margin: 0 auto;
+
+		h1, h2, h3, h4 {
+			font-weight: normal !important;
+		}
+
+		h1 {
+			font-family: $ostrich;
+			font-size: 3em;
+			color: $white;
+			line-height: 0.9em;
+			margin-bottom: 0.3em;
+			span {
+				font-family: $sofia;
+				font-size: 0.8em;
+				color: $green;
+				span.red {
+					color: $red;
+					font-size: 1em;
+				}
+			}
+		}
+
+		h2 {
+			text-align: center;
+			font-family: $ostrich;
+			font-size: 3em;
+			color: $white;
+			margin-bottom: 1em;
+			line-height:1em;
+		}
+
+		h4 {
+			font-family: $sofia;
+			font-size: 3em;
+			color: $white;
+			text-align: center;
+			margin: 0 0 1em 0;
+		}
+
+		.scroll { 
+		   width: 0; 
+		   height: 0;
+		   border-left: 18px solid transparent; 
+		   border-right: 18px solid transparent; 
+		   margin: 0 auto;
+		   cursor: pointer;
+		   display: block;
+		   &.grey {
+		   		border-top: 23px solid $dark_grey;
+		   }
+		   &.red {
+		   		border-top: 23px solid $red;
+		   		margin-bottom: 2em;
+		   }
+		   &.margin {
+		   		margin-top: 3em;
+		   }
+		}
+	}
+
+}
+
+#header {
+	text-align:center;
+	background-color: $skycolor;
+	#logo-wrapper {
+		position: relative;
+		margin: 0 auto;
+		padding-top: 2em;
+		max-width: 500px;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	#next-page-teaser {
+		position: relative;
+		padding-bottom: 2em;
+	}
+	.background-wrapper {
+		height: 61%;
+		background: $skycolor url("../img/clouds.png") repeat-x center top;
+		background-position: 15em 0.5em;
+		background-size: 1150px 400px;
+	}
+
+	@media 
+	(-webkit-min-device-pixel-ratio: 2), 
+	(min-resolution: 192dpi) { 
+		.background-wrapper {
+			background: $skycolor url("../img/clouds@2x.png") repeat-x center top;
+			background-size: 2000px 701px;
+		}
+	}
+}
+
+#about-valentair {
+	background-color: $dark-grey;
+	position: relative;
+	#how-it-works {
+		.outer-step {
+			width: 100%;
+			max-width: 305px;
+			position: relative;
+			margin: auto;
+			.inner-step {
+				display: inline-block;
+				h3 {
+					font-family: $sofia;
+					font-weight: normal !important;
+					color: $red;
+					line-height: 1em;
+					font-size: 2.2em;
+					margin: 0.8em 0 0.3em 0;
+					text-align: center;
+				}
+				img {
+					max-width: 100%;
+					height: auto;
+
+				}
+				p {
+					text-align: justify;
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+}
+
+#send-your-message {
+	background-color: $red;
+	text-align: center;
+
+
+	.button-holder {
+		button {
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			border: none;
+			font-family: $sofia;
+			color: $white;
+			font-size: 2.2em;
+			width: 275px;
+			height: 70px;
+			margin-bottom: 0.5em;
+			line-height:2em;
+			&:hover, &.active {
+				color: $green;
+			}
+			&.not-active {
+				color:#5a5a58;
+				&:hover {
+					color: $white;
+				}
+			}
+			&.grey {
+				background: $dark_grey; 
+				background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNkM2QzYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzNkM2QzYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzMzMzMzMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+				background: -moz-linear-gradient(top, #3d3d3b 0%, #3d3d3b 50%, #333333 51%, #333333 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3d3d3b), color-stop(50%,#3d3d3b), color-stop(51%,#333333), color-stop(100%,#333333)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #3d3d3b 0%,#3d3d3b 50%,#333333 51%,#333333 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top, #3d3d3b 0%,#3d3d3b 50%,#333333 51%,#333333 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top, #3d3d3b 0%,#3d3d3b 50%,#333333 51%,#333333 100%); /* IE10+ */
+				background: linear-gradient(to bottom, #3d3d3b 0%,#3d3d3b 50%,#333333 51%,#333333 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d3d3b', endColorstr='#333333',GradientType=0 ); /* IE6-8 */
+			}
+			&.green {
+				background: $green;
+				background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzgyY2ZjZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzgyY2ZjZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzc3Y2FjOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3N2NhYzgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+				background: -moz-linear-gradient(top,  #82cfcd 0%, #82cfcd 50%, #77cac8 51%, #77cac8 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#82cfcd), color-stop(50%,#82cfcd), color-stop(51%,#77cac8), color-stop(100%,#77cac8));
+				background: -webkit-linear-gradient(top,  #82cfcd 0%,#82cfcd 50%,#77cac8 51%,#77cac8 100%);
+				background: -o-linear-gradient(top,  #82cfcd 0%,#82cfcd 50%,#77cac8 51%,#77cac8 100%);
+				background: -ms-linear-gradient(top,  #82cfcd 0%,#82cfcd 50%,#77cac8 51%,#77cac8 100%);
+				background: linear-gradient(to bottom,  #82cfcd 0%,#82cfcd 50%,#77cac8 51%,#77cac8 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82cfcd', endColorstr='#77cac8',GradientType=0 );
+				&:hover {
+					color:$red;
+				}
+			}
+		}
+	}
+
+	form {
+		text-align: left;
+		margin-top: 3em;
+
+		&#love-hunter {
+			display: none;
+		}
+
+		.input-holder {
+			margin-bottom: 2em;
+		}
+
+		.limiter {
+			position: relative;
+			#display-limiter {
+				color:$red;
+				position: absolute;
+				font-size: 1.3em;
+				top: 5.5em;
+				right: 1em;
+			}
+		}
+
+		input, textarea {
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			-webkit-box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.1);
+			-moz-box-shadow:    0px 6px 9px rgba(0, 0, 0, 0.1);
+			box-shadow:         0px 6px 9px rgba(0, 0, 0, 0.1);
+			border:none;
+			background-color: $white;
+			height: 45px;
+			width: 100%;
+			max-width: 365px;	
+			text-indent: 0.75em;
+			font-size: 1.3em;
+			color: $dark_grey;
+		}
+		textarea {
+			height: auto;
+			max-width: 90%;
+			padding: 0.75em;
+			text-indent: 0;
+			line-height: 1.4em;
+		}
+		label {
+			width: 100%;
+			font-family: $sofia;
+			color: $white;
+			display: block;
+			font-size: 1.7em;
+			margin-bottom: 0.5em;
+		}
+	}
+}
+
+#footer {
+	background-color: $green;
+	margin-top: 7em;
+	font-size: 1.2em;
+	font-family: $bold;
+	text-align:center;
+	p {
+
+	}
+	ul {
+		margin: 0;
+		height:55px;
+		padding:0;
+		li {
+			display: inline;
+			line-height: 55px;
+			padding: 0 1em;
+		}
+	}
+}

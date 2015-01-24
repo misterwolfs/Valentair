@@ -1,0 +1,305 @@
+@media only screen and (min-width : 22em) {
+
+.outer-wrapper {
+	.inner-wrapper {
+		width: 92%;
+	
+		h2 {
+			font-size: 3.8em;
+		}
+	}
+}
+
+}
+
+@media only screen and (min-width : 34em) {
+
+.outer-wrapper {
+	.inner-wrapper {
+		width: 90%;
+	}
+}
+
+// #footer {
+// 	height: 55px;
+// 	p {
+// 		margin: 0;
+// 		line-height: 55px;
+// 		float:left;
+// 	}
+// 	ul {
+// 		float:right;
+// 		height:55px;
+// 		li {
+// 			display: inline;
+// 			line-height: 55px;
+// 			padding: 0 0 0 2em;
+// 		}
+// 	}
+// }
+
+}
+
+
+@media only screen and (min-width: 51em) {
+
+body, html {
+	height: 100%;
+}
+
+
+#view-messages-balloon-wrapper {
+	// position: relative;
+	// margin: 0 auto;
+	// padding-top: 0em;
+
+	// max-width: 520px;
+	// img {
+	// 	max-width: 100%;
+	// 	height: auto;
+	// }
+}
+
+.outer-wrapper {
+	position: relative;
+	.bottom {
+		position: absolute;
+		bottom:0;
+		width: 100%;
+	}
+	.inner-wrapper {
+		width: 98%;
+	h1 {
+		font-size: 4.5em;
+		color: $dark_grey;
+		line-height: 0.8em;
+		margin-bottom: 0.1em;
+		span {
+			font-family: $sofia;
+			font-size: 0.7em;
+			color: $green;
+		}
+	}
+
+	h2 {
+		font-size:5em;
+	}
+
+	}
+	
+	.us {
+		width:45%;
+
+		p {
+			margin-bottom: none;
+		}
+	}
+
+	.us-left {
+		float: left;
+	}
+
+	.us-right {
+		float:right;
+	}
+}
+
+#header {
+	#view-messages-balloon-wrapper, #KDG {
+		display: block;
+		position: absolute;
+		left:20%;
+		top: 42%;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	#KDG {
+		left:75%;
+		top: 28%;
+	}
+
+	.background-wrapper {
+		height: 61%;
+		background-position: center top;
+		background-size: 2000px 701px;
+	}
+
+	@media 
+	(-webkit-min-device-pixel-ratio: 2), 
+	(min-resolution: 192dpi) { 
+		.background-wrapper {
+			background: $skycolor url("../img/clouds@2x.png") repeat-x center top;
+			background-size: 2000px 701px;
+			background-position: center top;
+		}
+	}
+
+}
+
+label {
+	text-align: left;
+}
+
+.btn-center {
+	text-align:left;
+}
+
+#send-your-message {
+	.button-holder {
+		button {
+			font-size:2.2em;
+		}
+	}
+	form {
+		.input-holder {
+			margin-bottom: 2em;
+			text-align: left;
+		}
+	}
+}
+
+.button-holder {
+	.btn-float {
+		width:50%;
+		float:left;
+	}
+	button {
+		&.left {
+			float:left;
+		}
+		&.right {
+			float:right;
+		}
+	}
+}
+
+.form-wrapper {
+	width: 605px;
+	margin: 0 auto;
+}
+
+#footer {
+	margin-top: 5em;
+	font-size: 1.3em;
+	ul {
+		li {
+			display: inline;
+		}
+	}
+}
+	
+}
+
+@media only screen and (min-width : 61em) {
+
+	#about-valentair {
+		#how-it-works {
+			.outer-step {
+				 float:left;
+				 max-width: none;
+				 width: 33%;
+				 &:last-child {
+				 	float:right;
+				 }
+				.inner-step {
+					display: block;
+					width: 305px;
+					float:left;
+					&.last {
+						float: right;
+					}
+					&.center {
+						margin: 0 auto;
+						float: none;
+					}
+					p {
+						font-size: 1.3em;
+					}
+				}
+			}
+		}
+	}
+
+	textarea {
+		max-width: 93%;
+	}
+
+}
+
+/* ===== == = === 68.75em (1200) === = == ===== */
+
+@media only screen and (min-width : 75em) {
+
+.outer-wrapper {
+	.inner-wrapper {
+		width: 1100px;
+	}
+
+	h1 {
+		font-size: 4.5em;
+		line-height: 0.7em;
+		span {
+			font-size: 0.7em;
+		}
+	}
+}
+
+#header {
+	#logo-wrapper {
+
+	}
+}
+
+}
+
+@media only screen and (min-width : 119em) {
+
+.outer-wrapper {
+	.next-page-teaser {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+	.inner-wrapper {
+	h1 {
+		font-size: 5.5em;
+		line-height: 0.8em;
+		margin-bottom: 0.3em;
+		span {
+			font-size: 0.7em;
+			color: $green;
+		}
+	}
+
+	h2 {
+		font-size:5.5em;
+	}
+
+	}
+}
+
+#header {
+	#logo-wrapper {
+		max-width: 100%;
+		margin-top: 3em;
+	}
+	.next-page-teaser {
+		bottom: 3em;
+	}
+}
+
+#about-valentair {
+	.vertical-center {
+		position: absolute;
+		top: 50%;
+		margin-top: -290px;
+	}
+	#how-it-works {
+		position: relative;
+	}
+}
+
+}

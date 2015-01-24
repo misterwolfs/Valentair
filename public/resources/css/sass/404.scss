@@ -1,0 +1,69 @@
+/** SASS vars **/
+$skycolor: #b3e0f3;
+$green: #77cac8;
+$dark_grey: #333333;
+$white: #f8f8f8;
+$red: #ee2f47;
+
+$sofia: "sofiaregular";
+$ostrich: "ostrich_sans_roundedmedium";
+$proxima: "proxima_novaregular";
+$bold: "PNBold";
+
+@import "normalize";
+@import "animations";
+
+body {
+	font-family: $proxima;
+	font-weight: normal !important;
+	font-size: 1em;
+	color: $white;
+	line-height: 1.7em;
+	background-color: $skycolor;
+	-webkit-font-smoothing: antialiased;
+}
+
+body, html {
+	height: 100%;
+}
+
+#header {
+	height: 100%;
+	text-align:center;
+	position: relative;
+	background-color: $skycolor;
+	#logo-wrapper {
+		position: relative;
+		margin: 0 auto;
+		padding-top: 8em;
+		max-width: 800px;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.background-wrapper {
+		height: 100%;
+		background: $skycolor url("../img/clouds.png") repeat center top;
+		background-position: 6em 0.3em;
+	}
+
+	@media 
+	(-webkit-min-device-pixel-ratio: 2), 
+	(min-resolution: 192dpi) { 
+		.background-wrapper {
+			background: $skycolor url("../img/clouds@2x.png") repeat center top;
+			// background-size: 2000px 701px;
+			background-position: 6em 0.3em;
+			background-size: 900px 320px;
+		}
+	}
+}
+
+.outer-wrapper {
+	.inner-wrapper {
+		width: 95%;
+		margin: 0 auto;
+	}
+}
